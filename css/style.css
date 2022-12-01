@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-image: radial-gradient(
+    circle farthest-corner at 92.3% 71.5%,
+    rgba(83, 138, 214, 1) 0%,
+    rgba(134, 231, 214, 1) 90%
+  );
+  padding: 45px 0px;
+  color: white;
+}
+
+main{
+    margin: 15px;
+}
+
+footer{
+    background: rgb(34, 31, 31);
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caja{
+    width: 23%;
+    margin: 10px;
+}
+
+.caja img{
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 20px gray;
+}
+
+img:hover{
+    position: relative;
+    bottom: 3px;
+    right: 3px;
+    /* filter: blur(2px); */
+    /* filter: opacity(40%); */
+    /* filter: grayscale(100%); */
+    filter: sepia(100%);
+    transition: 500ms;
+}
+
+
+
+/* @media tipo de medio and (condición) {.....}*/
+/* tipos de medio: print, screen, speech, all */
+
+/* dispositivos mediano: tablet */
+/* 
+@media all and (min-width:992px){
+    header{
+        height: 250px;
+    }
+    main{
+        background: gray;
+    }
+ } */
+
+@media all and (min-width:768px) and (max-width:991px){
+   .caja{
+       width: 30%;
+   }
+}
+
+/* dispositivos pequeños: celulares */
+/* @media all and (min-width: 320px) and (max-width:767px){
+ 
+} */
+
+@media all and (max-width:767px){
+       .caja{
+        width: 95%;
+    }
+}
+
